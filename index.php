@@ -35,7 +35,7 @@
         td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
         }
 
         th {
@@ -52,6 +52,11 @@
             cursor: pointer;
             font-size: 16px;
             margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
         }
 
         button a {
@@ -63,6 +68,7 @@
             display: inline-block;
             padding: 8px 16px;
             margin-right: 5px;
+            margin-bottom: 5px;
             text-decoration: none;
             color: #fff;
             border-radius: 5px;
