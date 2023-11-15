@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Informasi Mahasiswa</title>
+    <title>Data Mahasiswa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -36,6 +36,11 @@
         .navbar a:hover {
             background-color: #ddd;
             color: black;
+        }
+
+        .navbar a.active {
+            background-color: #ffffff;
+            color: #000000;
         }
 
         section {
@@ -117,13 +122,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link home" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mahasiswa</a>
+                        <a class="nav-link mahasiswa" href="#">Mahasiswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Admin</a>
+                        <a class="nav-link admin" href="#">Admin</a>
                     </li>
                 </ul>
             </div>
@@ -175,6 +180,39 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var headerLinks = document.querySelectorAll(".navbar a");
+
+            function removeActiveClass() {
+                headerLinks.forEach(function (link) {
+                    link.classList.remove("active");
+                });
+            }
+
+            function setActiveClass(link) {
+                link.classList.add("active");
+            }
+
+            function handleLinkClick(event) {
+                removeActiveClass();
+                setActiveClass(event.target);
+            }
+
+            headerLinks.forEach(function (link) {
+                link.addEventListener("click", handleLinkClick);
+            });
+
+            var currentHash = window.location.hash;
+            if (currentHash) {
+                var targetLink = document.querySelector('a[href="' + currentHash + '"]');
+                if (targetLink) {
+                    removeActiveClass();
+                    setActiveClass(targetLink);
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
