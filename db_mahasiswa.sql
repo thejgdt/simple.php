@@ -45,6 +45,16 @@ CREATE TABLE `mahasiswa` (
 --
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`id_mahasiswa`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `mahasiswa`
+--
+ALTER TABLE `mahasiswa`
+  MODIFY `id_mahasiswa` int(9) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
