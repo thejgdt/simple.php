@@ -58,6 +58,29 @@
             text-decoration: none;
             color: white;
         }
+
+        .action-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .edit-btn {
+            background-color: #4285F4;
+        }
+
+        .delete-btn {
+            background-color: #d32f2f;
+        }
+
+        .edit-btn:hover,
+        .delete-btn:hover {
+            background-color: #333;
+        }
     </style>
 </head>
 
