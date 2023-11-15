@@ -19,50 +19,92 @@ function active_radio_button($value, $input)
 <html lang="en">
 
 <head>
-    <title>Membuat Form Inputan Data</title>
+    <title>Edit Data Mahasiswa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 8px;
+        }
+
+        table {
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 
-<center>
+<body>
 
-    <body>
+    <center>
         <form action="update.php" method="post">
             <input type="hidden" value="<?php echo $row['id_mahasiswa'] ?>" name="id_mahasiswa">
-            <table>
+            <table class="table table-bordered table-striped">
                 <tr>
                     <td>NIM</td>
-                    <td><input type="text" value="<?php echo $row['nim'] ?>" onkeyup="isi_otomatis()" name="nim"></td>
+                    <td><input type="text" class="form-control" value="<?php echo $row['nim'] ?>"
+                            onkeyup="isi_otomatis()" name="nim"></td>
                 </tr>
                 <tr>
                     <td>NAMA</td>
-                    <td><input type="text" value="<?php echo $row['nama'] ?>" name="nama"></td>
+                    <td><input type="text" class="form-control" value="<?php echo $row['nama'] ?>" name="nama"></td>
                 </tr>
                 <tr>
                     <td>JENIS KELAMIN</td>
                     <td>
-                        <input type="radio" name="jenis_kelamin" value="L" <?php echo active_radio_button('L', $row['jenis_kelamin']) ?>>Laki-laki
-                        <input type="radio" name="jenis_kelamin" value="P" <?php echo active_radio_button('P', $row['jenis_kelamin']) ?>>Perempuan
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" value="L" <?php echo active_radio_button('L', $row['jenis_kelamin']) ?>>
+                            <label class="form-check-label">Laki-laki</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" value="P" <?php echo active_radio_button('P', $row['jenis_kelamin']) ?>>
+                            <label class="form-check-label">Perempuan</label>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td>JURUSAN</td>
                     <td>
-                        <select name="jurusan">
-                            <option value="TEKNIK INFORMATIKA">TEKNIK INFORMATIKA</option>
-                            <option value="TEKNIK MESIN">TEKNIK MESIN</option>
-                            <option value="TEKNIK KIMIA">TEKNIK KIMIA</option>
+                        <select class="form-select" name="jurusan">
+                            <option value="TEKNIK INFORMATIKA" <?php echo ($row['jurusan'] == 'TEKNIK INFORMATIKA') ? 'selected' : ''; ?>>TEKNIK INFORMATIKA</option>
+                            <option value="TEKNIK MESIN" <?php echo ($row['jurusan'] == 'TEKNIK MESIN') ? 'selected' : ''; ?>>TEKNIK MESIN</option>
+                            <option value="TEKNIK KIMIA" <?php echo ($row['jurusan'] == 'TEKNIK KIMIA') ? 'selected' : ''; ?>>TEKNIK KIMIA</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>ALAMAT</td>
-                    <td><input type="text" value="<?php echo $row['alamat'] ?>" name="alamat"></td>
+                    <td><input type="text" class="form-control" value="<?php echo $row['alamat'] ?>" name="alamat"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button type="submit" value="simpan">SIMPAN</button></td>
+                    <td colspan="2"><button type="submit" class="btn btn-success" value="simpan">SIMPAN</button></td>
                 </tr>
             </table>
         </form>
-    </body>
-</center>
+    </center>
+
+</body>
 
 </html>
