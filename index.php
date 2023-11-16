@@ -175,7 +175,8 @@
                 <tr>
                     <td>JURUSAN</td>
                     <td>
-                        <select class="form-select" name="jurusan" id="">
+                        <select class="form-select" name="jurusan">
+                            <option selected disabled>Pilih Jurusan</option>
                             <option value="TEKNIK INFORMATIKA">TEKNIK INFORMATIKA</option>
                             <option value="TEKNIK MESIN">TEKNIK MESIN</option>
                             <option value="TEKNIK KIMIA">TEKNIK KIMIA</option>
@@ -184,7 +185,7 @@
                 </tr>
                 <tr>
                     <td>ALAMAT</td>
-                    <td><input type="text" class="form-control" name="alamat" id=""></td>
+                    <td><input type="text" class="form-control" name="alamat"></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit" class="btn btn-success" value="simpan">SIMPAN</button></td>
