@@ -145,6 +145,7 @@
                         <th>NAMA</th>
                         <th>GENDER</th>
                         <th>JURUSAN</th>
+                        <th>ALAMAT</th>
                         <th>ACTION</th>
                     </tr>
                 </thead>
@@ -162,6 +163,7 @@
                             <td>" . $row['nama'] . "</td>
                             <td>" . $jenis_kelamin . "</td>
                             <td>" . $row['jurusan'] . "</td>
+                            <td>" . $row['alamat'] . "</td>
                             <td>
                                 <a class='btn btn-primary mb-1' href='form-edit.php?id_mahasiswa=$row[id_mahasiswa]'>Edit</a>
                                 <a class='btn btn-danger' href='delete.php?id_mahasiswa=$row[id_mahasiswa]'>Delete</a>
