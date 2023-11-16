@@ -56,13 +56,17 @@ function active_radio_button($value, $input)
         button:hover {
             background-color: #333;
         }
+
+        .title-alignment {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
 
     <center>
-        <h2 class="mt-4 mb-4">Edit Data Mahasiswa</h2>
+        <h2 class="title-alignment mt-4 mb-4">Edit Data Mahasiswa</h2>
         <form action="update.php" method="post">
             <input type="hidden" value="<?php echo $row['id_mahasiswa'] ?>" name="id_mahasiswa">
             <table class="table table-bordered table-striped">
