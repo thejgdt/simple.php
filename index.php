@@ -135,6 +135,52 @@
         </div>
     </nav>
 
+    <section class="container d-flex align-items-center justify-content-center">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col mb-4">
+                <div class="card text-center d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-body">
+                        <img src="php-logo.png" alt="PHP Logo" style="max-width: 100px;">
+                        <p class="mt-3">PHP (Hypertext Preprocessor) adalah bahasa pemrograman skrip sumber terbuka
+                            untuk pengembangan web yang
+                            dapat disematkan dalam HTML.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card text-center d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-body">
+                        <img src="html-logo.png" alt="HTML Logo" style="max-width: 100px;">
+                        <p class="mt-3">HTML (Hyper Text Markup Language) adalah bahasa markup standar untuk membuat dan
+                            merancang tata letak halaman
+                            web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card text-center d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-body">
+                        <img src="css-logo.png" alt="CSS Logo" style="max-width: 100px;">
+                        <p class="mt-3">CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan format
+                            dokumen yang ditulis dalam HTML.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-4">
+                <div class="card text-center d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-body">
+                        <img src="js-logo.png" alt="JavaScript Logo" style="max-width: 100px;">
+                        <p class="mt-3">JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat
+                            halaman web interaktif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
