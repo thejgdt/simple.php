@@ -11,15 +11,28 @@ Untuk menjalankan proyek ini, Anda memerlukan:
 
 2. Browser web, seperti Google Chrome, Firefox, atau Edge.
 
-### Langkah-langkah untuk menjalankan proyek ini adalah sebagai berikut:
+Langkah-langkah untuk menjalankan proyek ini adalah sebagai berikut:
 
 1. Buka XAMPP Control Panel dan klik tombol Start pada baris Apache dan MySQL. Ini akan mengaktifkan web server dan database server pada komputer Anda.
 
 2. Salin folder simple.php dari repository GitHub ke folder htdocs di dalam folder XAMPP. Anda dapat mengunduh folder simple.php dari [repository simple.php](https://github.com/thejgdt/simple.php/).
+ 
+3. Untuk memastikan database yang ada pada simple.php ini bekerja, anda harus mengimport database `db_mahasiswa.sql` terlebih dahulu. Buka browser web Anda dan ketik alamat "http://localhost/phpmyadmin/" lalu pilih tab `Import`. Pada bagian `File to import` klik `Choose file` lalu pilih file `db_mahasiswa.sql` dari repository simple.php.
 
-3. Buka browser web Anda dan ketik alamat "http://localhost/<span style="color: red;">(nama folder)</span>" di bilah alamat. Secara default anda akan melihat halaman web index.php yang merupakan halaman utama dari proyek simple.php.
-
+4. Buka browser web Anda dan ketik alamat "http://localhost/<span style="color: red;">(nama folder)</span>" di bilah alamat. Secara default anda akan melihat halaman web index.php yang merupakan halaman utama dari proyek simple.php.
+ 
 <p>ubah <span style="color: red;">(nama folder)</span> dalam alamat di atas sesuai dengan nama folder simple php yang ada di dalam folder htdocs xampp</p>
+
+5. Jika anda ingin melakukan pengeditan data, anda harus login sebagai admin terlebih dahulu. Dalam hal ini saya sudah mengatur default username dan password untuk admin sebagai berikut:
+
+Username
+```
+thejgdt
+```
+Password
+```
+!Password70s
+```
 
 ### Credit(s)
 
