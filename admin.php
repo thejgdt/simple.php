@@ -234,39 +234,6 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var headerLinks = document.querySelectorAll(".navbar a");
-
-            function removeActiveClass() {
-                headerLinks.forEach(function (link) {
-                    link.classList.remove("active");
-                });
-            }
-
-            function setActiveClass(link) {
-                link.classList.add("active");
-            }
-
-            function handleLinkClick(event) {
-                removeActiveClass();
-                setActiveClass(event.target);
-            }
-
-            headerLinks.forEach(function (link) {
-                link.addEventListener("click", handleLinkClick);
-            });
-
-            var currentHash = window.location.hash;
-            if (currentHash) {
-                var targetLink = document.querySelector('a[href="' + currentHash + '"]');
-                if (targetLink) {
-                    removeActiveClass();
-                    setActiveClass(targetLink);
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>
