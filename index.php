@@ -125,7 +125,7 @@
                         <a class="nav-link home active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mahasiswa" href="#">Mahasiswa</a>
+                        <a class="nav-link mahasiswa" href="mahasiswa.php">Mahasiswa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link admin" href="admin.php">Admin</a>
