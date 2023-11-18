@@ -11,5 +11,5 @@ $alamat = $_POST['alamat'];
 $query = "UPDATE mahasiswa SET nim = '$nim', nama = '$nama', jurusan = '$jurusan', jenis_kelamin = '$jenis_kelamin', alamat = '$alamat' WHERE id_mahasiswa = '$id_mahasiswa'";
 mysqli_query($koneksi, $query);
 
-header("location:index.php");
+header("location:admin.php");
 ?>

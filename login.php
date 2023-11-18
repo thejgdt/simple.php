@@ -10,7 +10,7 @@ $result = mysqli_query($koneksi, $query);
 
 if (mysqli_num_rows($result) > 0) {
     $_SESSION['username'] = $nama;
-    header("location: index.php");
+    header("location: admin.php");
 } else {
     echo "Login gagal. Silakan coba lagi.";
 }

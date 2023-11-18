@@ -7,5 +7,5 @@ $query = "DELETE from mahasiswa WHERE id_mahasiswa='$id_mahasiswa'";
 
 mysqli_query($koneksi, $query);
 
-header("location:index.php");
+header("location:admin.php");
 ?>

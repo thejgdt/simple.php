@@ -134,13 +134,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link home" href="#">Home</a>
+                        <a class="nav-link home" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mahasiswa" href="#">Mahasiswa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link admin" href="#">Admin</a>
+                        <a class="nav-link admin active" href="#">Admin</a>
                     </li>
                 </ul>
             </div>

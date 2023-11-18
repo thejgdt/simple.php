@@ -10,5 +10,5 @@ $query = "INSERT INTO mahasiswa (nim, nama, jurusan, jenis_kelamin, alamat) VALU
 
 mysqli_query($koneksi, $query);
 
-header("location:index.php");
+header("location:admin.php");
 ?>
