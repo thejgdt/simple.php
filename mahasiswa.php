@@ -40,7 +40,7 @@
 
         .navbar a.active {
             background-color: #ffffff;
-            color: #000000;
+            color: #000000 !important;
         }
 
         section {
@@ -73,7 +73,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 10px;
+            margin: 5px 0 10px 0;
             transition: background-color 0.3s;
         }
 
