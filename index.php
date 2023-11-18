@@ -117,9 +117,14 @@
         <h1>THEJGDT</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link home active" href="#">Home</a>
@@ -142,7 +147,8 @@
                     <div class="card-body">
                         <img src="php-logo.png" alt="PHP Logo" style="max-width: 100px;">
                         <p class="mt-3">PHP (Hypertext Preprocessor) adalah bahasa pemrograman skrip sumber terbuka
-                            untuk pengembangan web yang
+                            untuk pengembangan
+                            web yang
                             dapat disematkan dalam HTML.</p>
                     </div>
                 </div>
